@@ -2,6 +2,10 @@ from pymavlink import mavutil
 import time
 import math
 
+def get_position(master):
+    msg = master.recv_match(type='LOCAL_POSITION_NED', blocking=True)
+    return msg.x, msg.y, msg.z
+    
 def wait_until_reached(master, target_x, target_y, target_z, tolerance=0.2):
     while True:
         x, y, z = get_position(master)
@@ -85,3 +89,4 @@ if __name__ == "__main__":
     wait_until_reached(master, 0, 0, -2)
 
     land(master)
+
