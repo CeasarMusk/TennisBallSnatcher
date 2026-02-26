@@ -25,7 +25,7 @@ def wait_until_reached(master, target_x, target_y, target_z, tolerance=0.2):
         time.sleep(0.5)
 
 def connect_sim():
-    master = mavutil.mavlink_connection('udp:127.0.0.1:14550') #master = mavutil.mavlink_connection('/dev/serial0', baud=57600)
+    master = mavutil.mavlink_connection('/dev/serial0', baud=57600) #master = mavutil.mavlink_connection('udp:127.0.0.1:14550')
     master.wait_heartbeat()
     print("Connected to simulation")
     return master
@@ -74,13 +74,13 @@ if __name__ == "__main__":
     set_guided_and_arm(master)
     takeoff(master, 2)
 
-    print("Moving forward 3 meters")
-    move_local(master, 3, 0, -2, 0)
-    wait_until_reached(master, 3, 0, -2)
+    print("Moving forward 0.5 meters")
+    move_local(master, 0.5, 0, -2, 0)
+    wait_until_reached(master, 0.5, 0, -2)
 
     # Hold same position, change yaw to 180°
     print("Turning 180 degrees")
-    move_local(master, 3, 0, -2, math.pi)
+    move_local(master, 0.5, 0, -2, math.pi)
     time.sleep(5)   # give time to rotate
 
 
@@ -89,4 +89,3 @@ if __name__ == "__main__":
     wait_until_reached(master, 0, 0, -2)
 
     land(master)
-
