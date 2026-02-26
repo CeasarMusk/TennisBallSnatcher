@@ -84,7 +84,7 @@ if __name__ == "__main__":
     time.sleep(5)   # give time to rotate
 
 
-    print("Moving back 3 meters")
+    print("Moving back 0.5 meters")
     move_local(master, 0, 0, -2, math.pi)
     wait_until_reached(master, 0, 0, -2)
 
