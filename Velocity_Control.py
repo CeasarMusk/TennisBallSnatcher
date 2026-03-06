@@ -54,7 +54,7 @@ def move_local(master, vx, vy, vz, yaw):
         0,
         master.target_system,
         master.target_component,
-        mavutil.mavlink.MAV_FRAME_LOCAL_NED,
+        mavutil.mavlink.MAV_FRAME_BODY_NED, # x is forward, y is right, z is down 
         0b0000101111000111, #bit mask from position(bit 0-2), velocity(bit 3-5), accelration(bit 6-8), force(bit 9) yaw(bit 10), yaw rate(bit 11)
         0, 0, 0, #position
         vx,vy,vz,   #velocity
@@ -74,32 +74,17 @@ if __name__ == "__main__":
     set_guided_and_arm(master)
     takeoff(master, 2)
 
-    # -------------------------
-    #  Move forward 0.2 m/s for 2 seconds
-    print("Moving forward 0.2 m/s")
-    start = time.time()
-    while time.time() - start < 2:
-        move_local(master, 0.2, 0, 0, 0)  # vx=0.2 forward, yaw=0 keeps current heading
-        time.sleep(0.1)
-    move_local(master, 0, 0, 0, 0)  # stop
+   # 1. Move Forward 2 meters (at 1m/s)
+    move_local(master, 1.0, 0, 0, 0) # Head North (Yaw 0)
+    time.sleep(2)
 
-    # -------------------------
-    #  Rotate 180° in place
-    print("Rotating 180°")
-    start = time.time()
-    while time.time() - start < 5:
-        move_local(master, 0, 0, 0, math.pi)  # vx=0, rotate to 180°
-        time.sleep(0.1)
-    move_local(master, 0, 0, 0, math.pi)  # hold final yaw
+# 2. Rotate to face South
+    move_local(master, 0, 0, 0, math.pi) # Rotate to 180 degrees
+    time.sleep(2)
 
-    # -------------------------
-    #  Move “back” to start (forward in BODY frame now points back)
-    print("Moving back 0.2 m/s")
-    start = time.time()
-    while time.time() - start < 2:
-        move_local(master, 0.2, 0, 0, 0)  # vx=0.2, yaw=0 keeps orientation constant
-        time.sleep(0.1)
-    move_local(master, 0, 0, 0, 0)  # stop
+# 3. Move "Forward" (which is now South) back to start
+    move_local(master, 1.0, 0, 0, math.pi) # Forward relative to nose
+    time.sleep(2)
 
     # -------------------------
     #  Land
