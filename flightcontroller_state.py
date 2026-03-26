@@ -1,13 +1,15 @@
 from pymavlink import mavutil
 import time
 
+
 class FlightController:
+
     def __init__(self, connection):
         self.master = connection
 
     def set_guided_mode(self):
         self.master.set_mode_apm("GUIDED")
-    
+
     def arm(self):
         self.master.arducopter_arm()
         self.master.motors_armed_wait()
@@ -24,10 +26,10 @@ class FlightController:
 
     def get_altitude(self):
         msg = self.master.recv_match(type='GLOBAL_POSITION_INT', blocking=False)
-    
+
         if msg is None:
             return None
-    
+
         # convert mm → meters
         return msg.relative_alt / 1000.0
 
