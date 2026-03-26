@@ -12,6 +12,7 @@ class FlightController:
 
     def arm(self):
         self.master.arducopter_arm()
+        print("attemping to arm")
         self.master.motors_armed_wait()
 
     def takeoff(self, altitude):
