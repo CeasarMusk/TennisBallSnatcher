@@ -15,7 +15,7 @@ class DroneStateMachine:
         elif self.state == "TAKEOFF":
             if not hasattr(self, "takeoff_sent"):
                 print("attempting takeoff\n")
-                self.fc.takeoff(3)
+                self.fc.takeoff(0)
                 self.takeoff_sent = True
 
             alt = self.fc.get_altitude()
