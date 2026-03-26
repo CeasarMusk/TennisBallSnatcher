@@ -9,5 +9,11 @@ class DroneStateMachine:
       self.state = "TAKEOFF"
 
     elif self.state == "TAKEOFF":
-      self.fc.takeoff(3)
-      self.state = "NAVIGATE"
+      if not hasattr(self, "takeoff_sent"):
+        self.fc.takeoff(3)
+        self.takeoff_sent = True
+
+      alt = self.fc.get_altitude()
+
+      if alt is not None and alt >= 1
+        self.state = "NAVIGATE"
