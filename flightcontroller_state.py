@@ -5,6 +5,9 @@ class FlightController:
     def __init__(self, connection):
         self.master = connection
 
+    def set_guided_mode(self):
+        self.master.set_mode_apm("GUIDED")
+    
     def arm(self):
         self.master.arducopter_arm()
         self.master.motors_armed_wait()
