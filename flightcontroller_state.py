@@ -22,5 +22,14 @@ class FlightController:
             altitude
         )
 
+    def get_altitude(self):
+        msg = self.master.recv_match(type='GLOBAL_POSITION_INT', blocking=False)
+    
+        if msg is None:
+            return None
+    
+        # convert mm → meters
+        return msg.relative_alt / 1000.0
+
     def land(self):
         self.master.set_mode_apm("LAND")
