@@ -7,7 +7,7 @@ class DroneStateMachine:
 
     def update(self):
         if self.state == "IDLE":
-            self.fc.set_stabelize_mode()
+            self.fc.set_stablize_mode()
             self.fc.arm()
             self.fc.set_guided_mode()
             print("guided state\n")
