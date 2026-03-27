@@ -7,6 +7,9 @@ class FlightController:
     def __init__(self, connection):
         self.master = connection
 
+    def set_stablize_mode(self):
+        self.master.set_mode("STABILIZE")
+        
     def set_guided_mode(self):
         self.master.set_mode_apm("GUIDED")
 
