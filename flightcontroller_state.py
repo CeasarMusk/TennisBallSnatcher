@@ -35,6 +35,20 @@ class FlightController:
         self.master.motors_disarmed_wait()
         print("Disarmed successfully")
 
+
+
+    def move_local(master, vx, vy, vz, yaw):
+    master.mav.set_position_target_local_ned_send(
+        0,
+        master.target_system,
+        master.target_component,
+        mavutil.mavlink.MAV_FRAME_BODY_NED, # x is forward, y is right, z is down 
+        0b0000101111000111, #bit mask from position(bit 0-2), velocity(bit 3-5), accelration(bit 6-8), force(bit 9) yaw(bit 10), yaw rate(bit 11)
+        0, 0, 0, #position
+        vx,vy,vz,   #velocity
+        0,0,0,   #acceleration
+        yaw,0      #yaw, yaw rate
+    )
     
 
     def takeoff(self, altitude):
