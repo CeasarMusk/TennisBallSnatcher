@@ -23,3 +23,11 @@ class DroneStateMachine:
             if alt is not None and alt >= 1:
                 self.state = "NAVIGATE"
                 print("Takeoff success")
+                
+        elif self.state == "NAVIGATE"
+            #if threshold < 0.7m 
+            #self.state = "STOP"
+
+        elif self.state == "STOP"
+        
+            
