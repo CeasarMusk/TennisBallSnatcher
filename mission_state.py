@@ -29,5 +29,21 @@ class DroneStateMachine:
             #self.state = "STOP"
 
         elif self.state == "STOP"
+            move_local(self.fc, 0, 0, 0, 0)
+            #if object to the left
+                print("Moving Right to avoid...")
+                # vx=0 (no forward), vy=0.5 (slow drift right), vz=0, yaw=0
+                move_local(self.fc, 0, 0.5, 0, 0)
+            #elif object to right
+                print("Moving Left to avoid...")
+                # vx=0 (no forward), vy=0.5 (slow drift right), vz=0, yaw=0
+                move_local(self.fc, 0, -0.5, 0, 0)
+            #else
+                self.state = "NAVIGATE"
+            #reroute
+
+
+        
+
         
             
