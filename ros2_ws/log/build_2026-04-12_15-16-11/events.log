@@ -1,0 +1,521 @@
+[0.000000] (-) TimerEvent: {}
+[0.000238] (-) JobUnselected: {'identifier': 'ardupilot_bridge'}
+[0.000397] (-) JobUnselected: {'identifier': 'ldlidar'}
+[0.000420] (-) JobUnselected: {'identifier': 'ldlidar_component'}
+[0.000439] (-) JobUnselected: {'identifier': 'ldlidar_node'}
+[0.000456] (-) JobUnselected: {'identifier': 'reactive_avoidance'}
+[0.000476] (rf2o_laser_odometry) JobQueued: {'identifier': 'rf2o_laser_odometry', 'dependencies': OrderedDict()}
+[0.001072] (rf2o_laser_odometry) JobStarted: {'identifier': 'rf2o_laser_odometry'}
+[0.015076] (rf2o_laser_odometry) JobProgress: {'identifier': 'rf2o_laser_odometry', 'progress': 'cmake'}
+[0.015777] (rf2o_laser_odometry) Command: {'cmd': ['/usr/bin/cmake', '/home/ceasarmusk/ros2_ws/src/rf2o_laser_odometry', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ceasarmusk/ros2_ws/install/rf2o_laser_odometry'], 'cwd': '/home/ceasarmusk/ros2_ws/build/rf2o_laser_odometry', 'env': OrderedDict({'USER': 'ceasarmusk', 'SSH_CLIENT': '2600:1700:1900:50f0::27 38200 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ceasarmusk/ros2_ws/install/ldlidar_component/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ceasarmusk', 'OLDPWD': '/home/ceasarmusk/rf2o_laser_odometry', 'TERMINFO': '/home/ceasarmusk/.terminfo', 'LESS': '-R', 'SSH_TTY': '/dev/pts/1', 'ZSH': '/home/ceasarmusk/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1001/bus', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'jazzy', 'COLCON_PREFIX_PATH': '/home/ceasarmusk/ros2_ws/install', 'LOGNAME': 'ceasarmusk', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'TERM': 'xterm-kitty', 'XDG_SESSION_ID': '2', 'KITTY_PUBLIC_KEY': '1:2xNljg!cIRGR}sIuPb`qN>^L%OfTk7_apJ~6j>zz', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/ceasarmusk/.local/share/kitty-ssh-kitten/kitty/bin:/home/ceasarmusk/.local/bin:/home/ceasarmusk/.local/bin', 'XDG_RUNTIME_DIR': '/run/user/1001', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ceasarmusk/ros2_ws/install/reactive_avoidance:/home/ceasarmusk/ros2_ws/install/ldlidar:/home/ceasarmusk/ros2_ws/install/ldlidar_node:/home/ceasarmusk/ros2_ws/install/ldlidar_component:/home/ceasarmusk/ros2_ws/install/ardupilot_bridge:/opt/ros/jazzy', 'SHELL': '/usr/bin/zsh', 'KITTY_WINDOW_ID': '5', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ceasarmusk/ros2_ws/build/rf2o_laser_odometry', 'SSH_CONNECTION': '2600:1700:1900:50f0::27 38200 2600:1700:1900:50f0::3c 22', 'PYTHONPATH': '/home/ceasarmusk/venvs/ardu_ros/lib/python3.12/site-packages:/home/ceasarmusk/ros2_ws/install/reactive_avoidance/lib/python3.12/site-packages:/home/ceasarmusk/ros2_ws/build/ardupilot_bridge:/home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ceasarmusk/ros2_ws/install/ldlidar:/home/ceasarmusk/ros2_ws/install/ldlidar_node:/home/ceasarmusk/ros2_ws/install/ldlidar_component:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ceasarmusk/ros2_ws/install/reactive_avoidance:/home/ceasarmusk/ros2_ws/install/ardupilot_bridge:/opt/ros/jazzy'}), 'shell': False}
+[0.099715] (-) TimerEvent: {}
+[0.200092] (-) TimerEvent: {}
+[0.300428] (-) TimerEvent: {}
+[0.400774] (-) TimerEvent: {}
+[0.501159] (-) TimerEvent: {}
+[0.601724] (-) TimerEvent: {}
+[0.606934] (rf2o_laser_odometry) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.701835] (-) TimerEvent: {}
+[0.802220] (-) TimerEvent: {}
+[0.902577] (-) TimerEvent: {}
+[0.987474] (rf2o_laser_odometry) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[1.002693] (-) TimerEvent: {}
+[1.028061] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.102801] (-) TimerEvent: {}
+[1.203240] (-) TimerEvent: {}
+[1.221341] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.236519] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.237489] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.238445] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.254577] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.303381] (-) TimerEvent: {}
+[1.403787] (-) TimerEvent: {}
+[1.437434] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.452849] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.453271] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.453960] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.461336] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[1.503908] (-) TimerEvent: {}
+[1.604286] (-) TimerEvent: {}
+[1.703385] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.704372] (-) TimerEvent: {}
+[1.804641] (-) TimerEvent: {}
+[1.845658] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.904752] (-) TimerEvent: {}
+[1.931901] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[2.004858] (-) TimerEvent: {}
+[2.028142] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[2.057487] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[2.096896] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.104977] (-) TimerEvent: {}
+[2.138192] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.205105] (-) TimerEvent: {}
+[2.301934] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[2.305193] (-) TimerEvent: {}
+[2.310500] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.405326] (-) TimerEvent: {}
+[2.498964] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[2.505419] (-) TimerEvent: {}
+[2.531352] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[2.568288] (rf2o_laser_odometry) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.605529] (-) TimerEvent: {}
+[2.705856] (-) TimerEvent: {}
+[2.720530] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[2.752753] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[2.787430] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.36.19 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)\n'}
+[2.805967] (-) TimerEvent: {}
+[2.820954] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)\n'}
+[2.824237] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[2.824418] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[2.906065] (-) TimerEvent: {}
+[3.006399] (-) TimerEvent: {}
+[3.106717] (-) TimerEvent: {}
+[3.134569] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[3.180006] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)\n'}
+[3.206838] (-) TimerEvent: {}
+[3.272931] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0")  \n'}
+[3.306959] (-) TimerEvent: {}
+[3.407311] (-) TimerEvent: {}
+[3.465027] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Configuring done (3.3s)\n'}
+[3.498126] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[3.506206] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Build files have been written to: /home/ceasarmusk/ros2_ws/build/rf2o_laser_odometry\n'}
+[3.507386] (-) TimerEvent: {}
+[3.533366] (rf2o_laser_odometry) CommandEnded: {'returncode': 0}
+[3.534077] (rf2o_laser_odometry) JobProgress: {'identifier': 'rf2o_laser_odometry', 'progress': 'build'}
+[3.534840] (rf2o_laser_odometry) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ceasarmusk/ros2_ws/build/rf2o_laser_odometry', '--', '-j4', '-l4'], 'cwd': '/home/ceasarmusk/ros2_ws/build/rf2o_laser_odometry', 'env': OrderedDict({'USER': 'ceasarmusk', 'SSH_CLIENT': '2600:1700:1900:50f0::27 38200 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ceasarmusk/ros2_ws/install/ldlidar_component/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ceasarmusk', 'OLDPWD': '/home/ceasarmusk/rf2o_laser_odometry', 'TERMINFO': '/home/ceasarmusk/.terminfo', 'LESS': '-R', 'SSH_TTY': '/dev/pts/1', 'ZSH': '/home/ceasarmusk/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1001/bus', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'jazzy', 'COLCON_PREFIX_PATH': '/home/ceasarmusk/ros2_ws/install', 'LOGNAME': 'ceasarmusk', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'TERM': 'xterm-kitty', 'XDG_SESSION_ID': '2', 'KITTY_PUBLIC_KEY': '1:2xNljg!cIRGR}sIuPb`qN>^L%OfTk7_apJ~6j>zz', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/ceasarmusk/.local/share/kitty-ssh-kitten/kitty/bin:/home/ceasarmusk/.local/bin:/home/ceasarmusk/.local/bin', 'XDG_RUNTIME_DIR': '/run/user/1001', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ceasarmusk/ros2_ws/install/reactive_avoidance:/home/ceasarmusk/ros2_ws/install/ldlidar:/home/ceasarmusk/ros2_ws/install/ldlidar_node:/home/ceasarmusk/ros2_ws/install/ldlidar_component:/home/ceasarmusk/ros2_ws/install/ardupilot_bridge:/opt/ros/jazzy', 'SHELL': '/usr/bin/zsh', 'KITTY_WINDOW_ID': '5', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ceasarmusk/ros2_ws/build/rf2o_laser_odometry', 'SSH_CONNECTION': '2600:1700:1900:50f0::27 38200 2600:1700:1900:50f0::3c 22', 'PYTHONPATH': '/home/ceasarmusk/venvs/ardu_ros/lib/python3.12/site-packages:/home/ceasarmusk/ros2_ws/install/reactive_avoidance/lib/python3.12/site-packages:/home/ceasarmusk/ros2_ws/build/ardupilot_bridge:/home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ceasarmusk/ros2_ws/install/ldlidar:/home/ceasarmusk/ros2_ws/install/ldlidar_node:/home/ceasarmusk/ros2_ws/install/ldlidar_component:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ceasarmusk/ros2_ws/install/reactive_avoidance:/home/ceasarmusk/ros2_ws/install/ardupilot_bridge:/opt/ros/jazzy'}), 'shell': False}
+[3.608109] (-) TimerEvent: {}
+[3.630180] (rf2o_laser_odometry) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/rf2o_laser_odometry.dir/src/CLaserOdometry2D.cpp.o\x1b[0m\n'}
+[3.630511] (rf2o_laser_odometry) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/rf2o_laser_odometry_node.dir/src/CLaserOdometry2D.cpp.o\x1b[0m\n'}
+[3.632351] (rf2o_laser_odometry) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/rf2o_laser_odometry_node.dir/src/CLaserOdometry2DNode.cpp.o\x1b[0m\n'}
+[3.708207] (-) TimerEvent: {}
+[3.808574] (-) TimerEvent: {}
+[3.908908] (-) TimerEvent: {}
+[4.014415] (-) TimerEvent: {}
+[4.114751] (-) TimerEvent: {}
+[4.215152] (-) TimerEvent: {}
+[4.315496] (-) TimerEvent: {}
+[4.415889] (-) TimerEvent: {}
+[4.516446] (-) TimerEvent: {}
+[4.617064] (-) TimerEvent: {}
+[4.717451] (-) TimerEvent: {}
+[4.818117] (-) TimerEvent: {}
+[4.918548] (-) TimerEvent: {}
+[5.018966] (-) TimerEvent: {}
+[5.119565] (-) TimerEvent: {}
+[5.220170] (-) TimerEvent: {}
+[5.321164] (-) TimerEvent: {}
+[5.422305] (-) TimerEvent: {}
+[5.522856] (-) TimerEvent: {}
+[5.625071] (-) TimerEvent: {}
+[5.725656] (-) TimerEvent: {}
+[5.826150] (-) TimerEvent: {}
+[5.926628] (-) TimerEvent: {}
+[6.028466] (-) TimerEvent: {}
+[6.129144] (-) TimerEvent: {}
+[6.229644] (-) TimerEvent: {}
+[6.330319] (-) TimerEvent: {}
+[6.430886] (-) TimerEvent: {}
+[6.531692] (-) TimerEvent: {}
+[6.633679] (-) TimerEvent: {}
+[6.734151] (-) TimerEvent: {}
+[6.834895] (-) TimerEvent: {}
+[6.935428] (-) TimerEvent: {}
+[7.036176] (-) TimerEvent: {}
+[7.136619] (-) TimerEvent: {}
+[7.237082] (-) TimerEvent: {}
+[7.337601] (-) TimerEvent: {}
+[7.438024] (-) TimerEvent: {}
+[7.538462] (-) TimerEvent: {}
+[7.638849] (-) TimerEvent: {}
+[7.739280] (-) TimerEvent: {}
+[7.839746] (-) TimerEvent: {}
+[7.940247] (-) TimerEvent: {}
+[8.040662] (-) TimerEvent: {}
+[8.141096] (-) TimerEvent: {}
+[8.241539] (-) TimerEvent: {}
+[8.341962] (-) TimerEvent: {}
+[8.442383] (-) TimerEvent: {}
+[8.542789] (-) TimerEvent: {}
+[8.643252] (-) TimerEvent: {}
+[8.743732] (-) TimerEvent: {}
+[8.844188] (-) TimerEvent: {}
+[8.944621] (-) TimerEvent: {}
+[9.045154] (-) TimerEvent: {}
+[9.145598] (-) TimerEvent: {}
+[9.246036] (-) TimerEvent: {}
+[9.346462] (-) TimerEvent: {}
+[9.446878] (-) TimerEvent: {}
+[9.547641] (-) TimerEvent: {}
+[9.648364] (-) TimerEvent: {}
+[9.749549] (-) TimerEvent: {}
+[9.850031] (-) TimerEvent: {}
+[9.950590] (-) TimerEvent: {}
+[10.051013] (-) TimerEvent: {}
+[10.151411] (-) TimerEvent: {}
+[10.251829] (-) TimerEvent: {}
+[10.352295] (-) TimerEvent: {}
+[10.453000] (-) TimerEvent: {}
+[10.553433] (-) TimerEvent: {}
+[10.653854] (-) TimerEvent: {}
+[10.754316] (-) TimerEvent: {}
+[10.854765] (-) TimerEvent: {}
+[10.955446] (-) TimerEvent: {}
+[11.056542] (-) TimerEvent: {}
+[11.157184] (-) TimerEvent: {}
+[11.257633] (-) TimerEvent: {}
+[11.358088] (-) TimerEvent: {}
+[11.458509] (-) TimerEvent: {}
+[11.559168] (-) TimerEvent: {}
+[11.659640] (-) TimerEvent: {}
+[11.760604] (-) TimerEvent: {}
+[11.861006] (-) TimerEvent: {}
+[11.961413] (-) TimerEvent: {}
+[12.062031] (-) TimerEvent: {}
+[12.162527] (-) TimerEvent: {}
+[12.263043] (-) TimerEvent: {}
+[12.363501] (-) TimerEvent: {}
+[12.464004] (-) TimerEvent: {}
+[12.564468] (-) TimerEvent: {}
+[12.664938] (-) TimerEvent: {}
+[12.766826] (-) TimerEvent: {}
+[12.867314] (-) TimerEvent: {}
+[12.967782] (-) TimerEvent: {}
+[13.068793] (-) TimerEvent: {}
+[13.169572] (-) TimerEvent: {}
+[13.270787] (-) TimerEvent: {}
+[13.371232] (-) TimerEvent: {}
+[13.471659] (-) TimerEvent: {}
+[13.572071] (-) TimerEvent: {}
+[13.672594] (-) TimerEvent: {}
+[13.774387] (-) TimerEvent: {}
+[13.874816] (-) TimerEvent: {}
+[13.975504] (-) TimerEvent: {}
+[14.076323] (-) TimerEvent: {}
+[14.176780] (-) TimerEvent: {}
+[14.277257] (-) TimerEvent: {}
+[14.377705] (-) TimerEvent: {}
+[14.478162] (-) TimerEvent: {}
+[14.578597] (-) TimerEvent: {}
+[14.679013] (-) TimerEvent: {}
+[14.779408] (-) TimerEvent: {}
+[14.879839] (-) TimerEvent: {}
+[14.980499] (-) TimerEvent: {}
+[15.080956] (-) TimerEvent: {}
+[15.181618] (-) TimerEvent: {}
+[15.282018] (-) TimerEvent: {}
+[15.382778] (-) TimerEvent: {}
+[15.483672] (-) TimerEvent: {}
+[15.584112] (-) TimerEvent: {}
+[15.684517] (-) TimerEvent: {}
+[15.784965] (-) TimerEvent: {}
+[15.885382] (-) TimerEvent: {}
+[15.985831] (-) TimerEvent: {}
+[16.086277] (-) TimerEvent: {}
+[16.186735] (-) TimerEvent: {}
+[16.287165] (-) TimerEvent: {}
+[16.387576] (-) TimerEvent: {}
+[16.488002] (-) TimerEvent: {}
+[16.588405] (-) TimerEvent: {}
+[16.688833] (-) TimerEvent: {}
+[16.789257] (-) TimerEvent: {}
+[16.889667] (-) TimerEvent: {}
+[16.990119] (-) TimerEvent: {}
+[17.090534] (-) TimerEvent: {}
+[17.191011] (-) TimerEvent: {}
+[17.291672] (-) TimerEvent: {}
+[17.392173] (-) TimerEvent: {}
+[17.492911] (-) TimerEvent: {}
+[17.593335] (-) TimerEvent: {}
+[17.693733] (-) TimerEvent: {}
+[17.794191] (-) TimerEvent: {}
+[17.894626] (-) TimerEvent: {}
+[17.995071] (-) TimerEvent: {}
+[18.095747] (-) TimerEvent: {}
+[18.196177] (-) TimerEvent: {}
+[18.296604] (-) TimerEvent: {}
+[18.397034] (-) TimerEvent: {}
+[18.497432] (-) TimerEvent: {}
+[18.597850] (-) TimerEvent: {}
+[18.698278] (-) TimerEvent: {}
+[18.798908] (-) TimerEvent: {}
+[18.899382] (-) TimerEvent: {}
+[18.999849] (-) TimerEvent: {}
+[19.100259] (-) TimerEvent: {}
+[19.201393] (-) TimerEvent: {}
+[19.301811] (-) TimerEvent: {}
+[19.402229] (-) TimerEvent: {}
+[19.503418] (-) TimerEvent: {}
+[19.603837] (-) TimerEvent: {}
+[19.704277] (-) TimerEvent: {}
+[19.804684] (-) TimerEvent: {}
+[19.905673] (-) TimerEvent: {}
+[20.006978] (-) TimerEvent: {}
+[20.107409] (-) TimerEvent: {}
+[20.208061] (-) TimerEvent: {}
+[20.308474] (-) TimerEvent: {}
+[20.408907] (-) TimerEvent: {}
+[20.509329] (-) TimerEvent: {}
+[20.609730] (-) TimerEvent: {}
+[20.710194] (-) TimerEvent: {}
+[20.810632] (-) TimerEvent: {}
+[20.911055] (-) TimerEvent: {}
+[21.012003] (-) TimerEvent: {}
+[21.112655] (-) TimerEvent: {}
+[21.213136] (-) TimerEvent: {}
+[21.313545] (-) TimerEvent: {}
+[21.415902] (-) TimerEvent: {}
+[21.516529] (-) TimerEvent: {}
+[21.617019] (-) TimerEvent: {}
+[21.717471] (-) TimerEvent: {}
+[21.817911] (-) TimerEvent: {}
+[21.918409] (-) TimerEvent: {}
+[22.018884] (-) TimerEvent: {}
+[22.119351] (-) TimerEvent: {}
+[22.220063] (-) TimerEvent: {}
+[22.320483] (-) TimerEvent: {}
+[22.422020] (-) TimerEvent: {}
+[22.522475] (-) TimerEvent: {}
+[22.622955] (-) TimerEvent: {}
+[22.724130] (-) TimerEvent: {}
+[22.824517] (-) TimerEvent: {}
+[22.925618] (-) TimerEvent: {}
+[23.026042] (-) TimerEvent: {}
+[23.126780] (-) TimerEvent: {}
+[23.227227] (-) TimerEvent: {}
+[23.327644] (-) TimerEvent: {}
+[23.428156] (-) TimerEvent: {}
+[23.530275] (-) TimerEvent: {}
+[23.630652] (-) TimerEvent: {}
+[23.731021] (-) TimerEvent: {}
+[23.831382] (-) TimerEvent: {}
+[23.933055] (-) TimerEvent: {}
+[24.033507] (-) TimerEvent: {}
+[24.133958] (-) TimerEvent: {}
+[24.234373] (-) TimerEvent: {}
+[24.334785] (-) TimerEvent: {}
+[24.435467] (-) TimerEvent: {}
+[24.535962] (-) TimerEvent: {}
+[24.636389] (-) TimerEvent: {}
+[24.736815] (-) TimerEvent: {}
+[24.837278] (-) TimerEvent: {}
+[24.937693] (-) TimerEvent: {}
+[25.038160] (-) TimerEvent: {}
+[25.138583] (-) TimerEvent: {}
+[25.239022] (-) TimerEvent: {}
+[25.339473] (-) TimerEvent: {}
+[25.439939] (-) TimerEvent: {}
+[25.540354] (-) TimerEvent: {}
+[25.640775] (-) TimerEvent: {}
+[25.741186] (-) TimerEvent: {}
+[25.841611] (-) TimerEvent: {}
+[25.942043] (-) TimerEvent: {}
+[26.042482] (-) TimerEvent: {}
+[26.142896] (-) TimerEvent: {}
+[26.243336] (-) TimerEvent: {}
+[26.343779] (-) TimerEvent: {}
+[26.444216] (-) TimerEvent: {}
+[26.544661] (-) TimerEvent: {}
+[26.645108] (-) TimerEvent: {}
+[26.745508] (-) TimerEvent: {}
+[26.845978] (-) TimerEvent: {}
+[26.946354] (-) TimerEvent: {}
+[27.046747] (-) TimerEvent: {}
+[27.147174] (-) TimerEvent: {}
+[27.247599] (-) TimerEvent: {}
+[27.348042] (-) TimerEvent: {}
+[27.448459] (-) TimerEvent: {}
+[27.548883] (-) TimerEvent: {}
+[27.649548] (-) TimerEvent: {}
+[27.750013] (-) TimerEvent: {}
+[27.850442] (-) TimerEvent: {}
+[27.950857] (-) TimerEvent: {}
+[28.051886] (-) TimerEvent: {}
+[28.152311] (-) TimerEvent: {}
+[28.252864] (-) TimerEvent: {}
+[28.353268] (-) TimerEvent: {}
+[28.453691] (-) TimerEvent: {}
+[28.554162] (-) TimerEvent: {}
+[28.654553] (-) TimerEvent: {}
+[28.754988] (-) TimerEvent: {}
+[28.855419] (-) TimerEvent: {}
+[28.955847] (-) TimerEvent: {}
+[29.056290] (-) TimerEvent: {}
+[29.156706] (-) TimerEvent: {}
+[29.257242] (-) TimerEvent: {}
+[29.357790] (-) TimerEvent: {}
+[29.458161] (-) TimerEvent: {}
+[29.558539] (-) TimerEvent: {}
+[29.658883] (-) TimerEvent: {}
+[29.759244] (-) TimerEvent: {}
+[29.859653] (-) TimerEvent: {}
+[29.960137] (-) TimerEvent: {}
+[30.060481] (-) TimerEvent: {}
+[30.160828] (-) TimerEvent: {}
+[30.261252] (-) TimerEvent: {}
+[30.361695] (-) TimerEvent: {}
+[30.462137] (-) TimerEvent: {}
+[30.562666] (-) TimerEvent: {}
+[30.663129] (-) TimerEvent: {}
+[30.763669] (-) TimerEvent: {}
+[30.864323] (-) TimerEvent: {}
+[30.965102] (-) TimerEvent: {}
+[31.065636] (-) TimerEvent: {}
+[31.166141] (-) TimerEvent: {}
+[31.266586] (-) TimerEvent: {}
+[31.367027] (-) TimerEvent: {}
+[31.467696] (-) TimerEvent: {}
+[31.568194] (-) TimerEvent: {}
+[31.668692] (-) TimerEvent: {}
+[31.769171] (-) TimerEvent: {}
+[31.869749] (-) TimerEvent: {}
+[31.970984] (-) TimerEvent: {}
+[32.072041] (-) TimerEvent: {}
+[32.172698] (-) TimerEvent: {}
+[32.274108] (-) TimerEvent: {}
+[32.375088] (-) TimerEvent: {}
+[32.475763] (-) TimerEvent: {}
+[32.579141] (-) TimerEvent: {}
+[32.679510] (-) TimerEvent: {}
+[32.779879] (-) TimerEvent: {}
+[32.880250] (-) TimerEvent: {}
+[32.980602] (-) TimerEvent: {}
+[33.080972] (-) TimerEvent: {}
+[33.181336] (-) TimerEvent: {}
+[33.281676] (-) TimerEvent: {}
+[33.382035] (-) TimerEvent: {}
+[33.482387] (-) TimerEvent: {}
+[33.582756] (-) TimerEvent: {}
+[33.683121] (-) TimerEvent: {}
+[33.783503] (-) TimerEvent: {}
+[33.883866] (-) TimerEvent: {}
+[33.984243] (-) TimerEvent: {}
+[34.084607] (-) TimerEvent: {}
+[34.184992] (-) TimerEvent: {}
+[34.285366] (-) TimerEvent: {}
+[34.385741] (-) TimerEvent: {}
+[34.486112] (-) TimerEvent: {}
+[34.586481] (-) TimerEvent: {}
+[34.686848] (-) TimerEvent: {}
+[34.787237] (-) TimerEvent: {}
+[34.887587] (-) TimerEvent: {}
+[34.987961] (-) TimerEvent: {}
+[35.088327] (-) TimerEvent: {}
+[35.188687] (-) TimerEvent: {}
+[35.289026] (-) TimerEvent: {}
+[35.389415] (-) TimerEvent: {}
+[35.489788] (-) TimerEvent: {}
+[35.590165] (-) TimerEvent: {}
+[35.690579] (-) TimerEvent: {}
+[35.790952] (-) TimerEvent: {}
+[35.891320] (-) TimerEvent: {}
+[35.991668] (-) TimerEvent: {}
+[36.092005] (-) TimerEvent: {}
+[36.192341] (-) TimerEvent: {}
+[36.292682] (-) TimerEvent: {}
+[36.393025] (-) TimerEvent: {}
+[36.493406] (-) TimerEvent: {}
+[36.593747] (-) TimerEvent: {}
+[36.694108] (-) TimerEvent: {}
+[36.794443] (-) TimerEvent: {}
+[36.894785] (-) TimerEvent: {}
+[36.995139] (-) TimerEvent: {}
+[37.095481] (-) TimerEvent: {}
+[37.195834] (-) TimerEvent: {}
+[37.296222] (-) TimerEvent: {}
+[37.396570] (-) TimerEvent: {}
+[37.496900] (-) TimerEvent: {}
+[37.597239] (-) TimerEvent: {}
+[37.697567] (-) TimerEvent: {}
+[37.797871] (-) TimerEvent: {}
+[37.898294] (-) TimerEvent: {}
+[37.998659] (-) TimerEvent: {}
+[38.099108] (-) TimerEvent: {}
+[38.199556] (-) TimerEvent: {}
+[38.300063] (-) TimerEvent: {}
+[38.400756] (-) TimerEvent: {}
+[38.501586] (-) TimerEvent: {}
+[38.602040] (-) TimerEvent: {}
+[38.702471] (-) TimerEvent: {}
+[38.802846] (-) TimerEvent: {}
+[38.903254] (-) TimerEvent: {}
+[39.004997] (-) TimerEvent: {}
+[39.106193] (-) TimerEvent: {}
+[39.206570] (-) TimerEvent: {}
+[39.307146] (-) TimerEvent: {}
+[39.408058] (-) TimerEvent: {}
+[39.508612] (-) TimerEvent: {}
+[39.572848] (rf2o_laser_odometry) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX executable rf2o_laser_odometry_node\x1b[0m\n'}
+[39.608786] (-) TimerEvent: {}
+[39.709411] (-) TimerEvent: {}
+[39.810460] (-) TimerEvent: {}
+[39.912209] (-) TimerEvent: {}
+[40.015505] (-) TimerEvent: {}
+[40.116533] (-) TimerEvent: {}
+[40.125505] (rf2o_laser_odometry) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX static library librf2o_laser_odometry.a\x1b[0m\n'}
+[40.216680] (-) TimerEvent: {}
+[40.317333] (-) TimerEvent: {}
+[40.417877] (-) TimerEvent: {}
+[40.518201] (-) TimerEvent: {}
+[40.618543] (-) TimerEvent: {}
+[40.718885] (-) TimerEvent: {}
+[40.819431] (-) TimerEvent: {}
+[40.920548] (-) TimerEvent: {}
+[41.021349] (-) TimerEvent: {}
+[41.121912] (-) TimerEvent: {}
+[41.222276] (-) TimerEvent: {}
+[41.322589] (-) TimerEvent: {}
+[41.422908] (-) TimerEvent: {}
+[41.523263] (-) TimerEvent: {}
+[41.623585] (-) TimerEvent: {}
+[41.723948] (-) TimerEvent: {}
+[41.824399] (-) TimerEvent: {}
+[41.860675] (rf2o_laser_odometry) StdoutLine: {'line': b'[100%] Built target rf2o_laser_odometry\n'}
+[41.924527] (-) TimerEvent: {}
+[42.024989] (-) TimerEvent: {}
+[42.125408] (-) TimerEvent: {}
+[42.226018] (-) TimerEvent: {}
+[42.326861] (-) TimerEvent: {}
+[42.427402] (-) TimerEvent: {}
+[42.528252] (-) TimerEvent: {}
+[42.628771] (-) TimerEvent: {}
+[42.729454] (-) TimerEvent: {}
+[42.829820] (-) TimerEvent: {}
+[42.930307] (-) TimerEvent: {}
+[43.030720] (-) TimerEvent: {}
+[43.131063] (-) TimerEvent: {}
+[43.231392] (-) TimerEvent: {}
+[43.331718] (-) TimerEvent: {}
+[43.432055] (-) TimerEvent: {}
+[43.532365] (-) TimerEvent: {}
+[43.632669] (-) TimerEvent: {}
+[43.732989] (-) TimerEvent: {}
+[43.777496] (rf2o_laser_odometry) StdoutLine: {'line': b'[100%] Built target rf2o_laser_odometry_node\n'}
+[43.799422] (rf2o_laser_odometry) CommandEnded: {'returncode': 0}
+[43.800141] (rf2o_laser_odometry) JobProgress: {'identifier': 'rf2o_laser_odometry', 'progress': 'install'}
+[43.817392] (rf2o_laser_odometry) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ceasarmusk/ros2_ws/build/rf2o_laser_odometry'], 'cwd': '/home/ceasarmusk/ros2_ws/build/rf2o_laser_odometry', 'env': OrderedDict({'USER': 'ceasarmusk', 'SSH_CLIENT': '2600:1700:1900:50f0::27 38200 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ceasarmusk/ros2_ws/install/ldlidar_component/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ceasarmusk', 'OLDPWD': '/home/ceasarmusk/rf2o_laser_odometry', 'TERMINFO': '/home/ceasarmusk/.terminfo', 'LESS': '-R', 'SSH_TTY': '/dev/pts/1', 'ZSH': '/home/ceasarmusk/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1001/bus', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'jazzy', 'COLCON_PREFIX_PATH': '/home/ceasarmusk/ros2_ws/install', 'LOGNAME': 'ceasarmusk', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'TERM': 'xterm-kitty', 'XDG_SESSION_ID': '2', 'KITTY_PUBLIC_KEY': '1:2xNljg!cIRGR}sIuPb`qN>^L%OfTk7_apJ~6j>zz', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/ceasarmusk/.local/share/kitty-ssh-kitten/kitty/bin:/home/ceasarmusk/.local/bin:/home/ceasarmusk/.local/bin', 'XDG_RUNTIME_DIR': '/run/user/1001', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ceasarmusk/ros2_ws/install/reactive_avoidance:/home/ceasarmusk/ros2_ws/install/ldlidar:/home/ceasarmusk/ros2_ws/install/ldlidar_node:/home/ceasarmusk/ros2_ws/install/ldlidar_component:/home/ceasarmusk/ros2_ws/install/ardupilot_bridge:/opt/ros/jazzy', 'SHELL': '/usr/bin/zsh', 'KITTY_WINDOW_ID': '5', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ceasarmusk/ros2_ws/build/rf2o_laser_odometry', 'SSH_CONNECTION': '2600:1700:1900:50f0::27 38200 2600:1700:1900:50f0::3c 22', 'PYTHONPATH': '/home/ceasarmusk/venvs/ardu_ros/lib/python3.12/site-packages:/home/ceasarmusk/ros2_ws/install/reactive_avoidance/lib/python3.12/site-packages:/home/ceasarmusk/ros2_ws/build/ardupilot_bridge:/home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ceasarmusk/ros2_ws/install/ldlidar:/home/ceasarmusk/ros2_ws/install/ldlidar_node:/home/ceasarmusk/ros2_ws/install/ldlidar_component:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ceasarmusk/ros2_ws/install/reactive_avoidance:/home/ceasarmusk/ros2_ws/install/ardupilot_bridge:/opt/ros/jazzy'}), 'shell': False}
+[43.832295] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[43.832973] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[43.833093] (-) TimerEvent: {}
+[43.833610] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Symlinking: /home/ceasarmusk/ros2_ws/install/rf2o_laser_odometry/lib/rf2o_laser_odometry/rf2o_laser_odometry_node\n'}
+[43.850740] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Symlinking: /home/ceasarmusk/ros2_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/launch/rf2o_laser_odometry.launch.py\n'}
+[43.867379] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Symlinking: /home/ceasarmusk/ros2_ws/install/rf2o_laser_odometry/share/ament_index/resource_index/package_run_dependencies/rf2o_laser_odometry\n'}
+[43.884343] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Symlinking: /home/ceasarmusk/ros2_ws/install/rf2o_laser_odometry/share/ament_index/resource_index/parent_prefix_path/rf2o_laser_odometry\n'}
+[43.901866] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Symlinking: /home/ceasarmusk/ros2_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/environment/ament_prefix_path.sh\n'}
+[43.918322] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Symlinking: /home/ceasarmusk/ros2_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/environment/ament_prefix_path.dsv\n'}
+[43.933211] (-) TimerEvent: {}
+[43.935180] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Symlinking: /home/ceasarmusk/ros2_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/environment/path.sh\n'}
+[43.951591] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Symlinking: /home/ceasarmusk/ros2_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/environment/path.dsv\n'}
+[43.967485] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Symlinking: /home/ceasarmusk/ros2_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/local_setup.bash\n'}
+[43.983559] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Symlinking: /home/ceasarmusk/ros2_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/local_setup.sh\n'}
+[43.999800] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Symlinking: /home/ceasarmusk/ros2_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/local_setup.zsh\n'}
+[44.016796] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Symlinking: /home/ceasarmusk/ros2_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/local_setup.dsv\n'}
+[44.033111] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Symlinking: /home/ceasarmusk/ros2_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/package.dsv\n'}
+[44.033314] (-) TimerEvent: {}
+[44.049647] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Symlinking: /home/ceasarmusk/ros2_ws/install/rf2o_laser_odometry/share/ament_index/resource_index/packages/rf2o_laser_odometry\n'}
+[44.067069] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Symlinking: /home/ceasarmusk/ros2_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/cmake/rf2o_laser_odometryConfig.cmake\n'}
+[44.083432] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Symlinking: /home/ceasarmusk/ros2_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/cmake/rf2o_laser_odometryConfig-version.cmake\n'}
+[44.100102] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Symlinking: /home/ceasarmusk/ros2_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/package.xml\n'}
+[44.121118] (rf2o_laser_odometry) CommandEnded: {'returncode': 0}
+[44.133544] (-) TimerEvent: {}
+[44.159880] (rf2o_laser_odometry) JobEnded: {'identifier': 'rf2o_laser_odometry', 'rc': 0}
+[44.160797] (-) EventReactorShutdown: {}

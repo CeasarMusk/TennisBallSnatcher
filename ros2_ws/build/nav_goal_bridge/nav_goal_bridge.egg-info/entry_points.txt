@@ -1,0 +1,2 @@
+[console_scripts]
+move_base_simple_to_nav2 = nav_goal_bridge.move_base_simple_to_nav2:main

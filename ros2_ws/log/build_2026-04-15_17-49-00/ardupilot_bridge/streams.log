@@ -1,0 +1,40 @@
+[2.041s] Invoking command in '/home/ceasarmusk/ros2_ws/build/ardupilot_bridge': PYTHONPATH=/home/ceasarmusk/ros2_ws/build/ardupilot_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/ceasarmusk/ros2_ws/build/ardupilot_bridge/build
+[2.538s] running develop
+[2.859s] Removing /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/python3.12/site-packages/ardupilot-bridge.egg-link (link to .)
+[2.973s] Invoked command in '/home/ceasarmusk/ros2_ws/build/ardupilot_bridge' returned '0': PYTHONPATH=/home/ceasarmusk/ros2_ws/build/ardupilot_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/ceasarmusk/ros2_ws/build/ardupilot_bridge/build
+[2.975s] Invoking command in '/home/ceasarmusk/ros2_ws/src/ardupilot_bridge': PYTHONPATH=/home/ceasarmusk/ros2_ws/build/ardupilot_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ardupilot_bridge build --build-base /home/ceasarmusk/ros2_ws/build/ardupilot_bridge/build install --record /home/ceasarmusk/ros2_ws/build/ardupilot_bridge/install.log --single-version-externally-managed install_data --force
+[3.405s] running egg_info
+[3.434s] writing ../../build/ardupilot_bridge/ardupilot_bridge.egg-info/PKG-INFO
+[3.434s] writing dependency_links to ../../build/ardupilot_bridge/ardupilot_bridge.egg-info/dependency_links.txt
+[3.436s] writing entry points to ../../build/ardupilot_bridge/ardupilot_bridge.egg-info/entry_points.txt
+[3.437s] writing requirements to ../../build/ardupilot_bridge/ardupilot_bridge.egg-info/requires.txt
+[3.437s] writing top-level names to ../../build/ardupilot_bridge/ardupilot_bridge.egg-info/top_level.txt
+[3.499s] reading manifest file '../../build/ardupilot_bridge/ardupilot_bridge.egg-info/SOURCES.txt'
+[3.500s] writing manifest file '../../build/ardupilot_bridge/ardupilot_bridge.egg-info/SOURCES.txt'
+[3.501s] running build
+[3.501s] running build_py
+[3.501s] creating /home/ceasarmusk/ros2_ws/build/ardupilot_bridge/build
+[3.501s] creating /home/ceasarmusk/ros2_ws/build/ardupilot_bridge/build/lib
+[3.501s] creating /home/ceasarmusk/ros2_ws/build/ardupilot_bridge/build/lib/ardupilot_bridge
+[3.501s] copying ardupilot_bridge/__init__.py -> /home/ceasarmusk/ros2_ws/build/ardupilot_bridge/build/lib/ardupilot_bridge
+[3.501s] copying ardupilot_bridge/cmd_vel_to_guided.py -> /home/ceasarmusk/ros2_ws/build/ardupilot_bridge/build/lib/ardupilot_bridge
+[3.502s] copying ardupilot_bridge/scan_to_obstacle_distance.py -> /home/ceasarmusk/ros2_ws/build/ardupilot_bridge/build/lib/ardupilot_bridge
+[3.502s] running install
+[3.513s] running install_lib
+[3.543s] creating /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/python3.12/site-packages/ardupilot_bridge
+[3.543s] copying /home/ceasarmusk/ros2_ws/build/ardupilot_bridge/build/lib/ardupilot_bridge/__init__.py -> /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/python3.12/site-packages/ardupilot_bridge
+[3.543s] copying /home/ceasarmusk/ros2_ws/build/ardupilot_bridge/build/lib/ardupilot_bridge/cmd_vel_to_guided.py -> /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/python3.12/site-packages/ardupilot_bridge
+[3.543s] copying /home/ceasarmusk/ros2_ws/build/ardupilot_bridge/build/lib/ardupilot_bridge/scan_to_obstacle_distance.py -> /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/python3.12/site-packages/ardupilot_bridge
+[3.544s] byte-compiling /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/python3.12/site-packages/ardupilot_bridge/__init__.py to __init__.cpython-312.pyc
+[3.545s] byte-compiling /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/python3.12/site-packages/ardupilot_bridge/cmd_vel_to_guided.py to cmd_vel_to_guided.cpython-312.pyc
+[3.548s] byte-compiling /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/python3.12/site-packages/ardupilot_bridge/scan_to_obstacle_distance.py to scan_to_obstacle_distance.cpython-312.pyc
+[3.552s] running install_data
+[3.552s] copying resource/ardupilot_bridge -> /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/share/ament_index/resource_index/packages
+[3.554s] copying package.xml -> /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/share/ardupilot_bridge
+[3.555s] running install_egg_info
+[3.586s] Copying ../../build/ardupilot_bridge/ardupilot_bridge.egg-info to /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/python3.12/site-packages/ardupilot_bridge-0.0.0-py3.12.egg-info
+[3.588s] running install_scripts
+[3.805s] Installing cmd_vel_to_guided script to /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/ardupilot_bridge
+[3.805s] Installing scan_to_obstacle_distance script to /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/ardupilot_bridge
+[3.806s] writing list of installed files to '/home/ceasarmusk/ros2_ws/build/ardupilot_bridge/install.log'
+[3.908s] Invoked command in '/home/ceasarmusk/ros2_ws/src/ardupilot_bridge' returned '0': PYTHONPATH=/home/ceasarmusk/ros2_ws/build/ardupilot_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ardupilot_bridge build --build-base /home/ceasarmusk/ros2_ws/build/ardupilot_bridge/build install --record /home/ceasarmusk/ros2_ws/build/ardupilot_bridge/install.log --single-version-externally-managed install_data --force

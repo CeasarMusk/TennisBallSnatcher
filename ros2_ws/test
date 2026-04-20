@@ -1,0 +1,30 @@
+ros2 launch ldlidar_node ldlidar_with_mgr.launch.py
+
+ros2 run rf2o_laser_odometry rf2o_laser_odometry_node --ros-args \
+  -p laser_scan_topic:=/ldlidar_node/scan \
+  -p init_pose_from_topic:='""' \
+  -p base_frame_id:=ldlidar_base \
+  -p odom_frame_id:=odom \
+  -p publish_tf:=true
+
+ros2 launch slam_toolbox online_async_launch.py \
+  slam_params_file:=/home/ceasarmusk/ros2_ws/nav2/slam_toolbox.yaml
+
+ros2 launch /home/ceasarmusk/ros2_ws/nav2/minimal_nav2.launch.py \
+  params_file:=/home/ceasarmusk/ros2_ws/nav2/nav2_params.yaml
+
+ros2 launch foxglove_bridge foxglove_bridge_launch.xml port:=8765
+
+ros2 run nav_goal_bridge move_base_simple_to_nav2
+
+ros2 run ardupilot_bridge cmd_vel_to_guided --ros-args \
+  -p mavlink_connection:=udp:127.0.0.1:14551 \
+  -p cmd_vel_topic:=/cmd_vel_nav \
+  -p send_rate_hz:=20.0 \
+  -p command_timeout_s:=0.5 \
+  -p max_vx:=0.30 \
+  -p max_vy:=0.30 \
+  -p max_yaw_rate:=0.50
+
+ros2 run ardupilot_bridge scan_to_obstacle_distance
+ros2 run nav_goal_bridge move_base_simple_to_nav2

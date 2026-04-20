@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating ardupilot_bridge.egg-info
+writing ardupilot_bridge.egg-info/PKG-INFO
+writing dependency_links to ardupilot_bridge.egg-info/dependency_links.txt
+writing entry points to ardupilot_bridge.egg-info/entry_points.txt
+writing requirements to ardupilot_bridge.egg-info/requires.txt
+writing top-level names to ardupilot_bridge.egg-info/top_level.txt
+writing manifest file 'ardupilot_bridge.egg-info/SOURCES.txt'
+reading manifest file 'ardupilot_bridge.egg-info/SOURCES.txt'
+writing manifest file 'ardupilot_bridge.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/python3.12/site-packages/ardupilot-bridge.egg-link (link to .)
+Installing scan_to_obstacle_distance script to /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/ardupilot_bridge
+
+Installed /home/ceasarmusk/ros2_ws/build/ardupilot_bridge
+running symlink_data
+creating /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/share/ament_index
+creating /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/share/ament_index/resource_index
+creating /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/share/ament_index/resource_index/packages
+symbolically linking /home/ceasarmusk/ros2_ws/build/ardupilot_bridge/resource/ardupilot_bridge -> /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/share/ament_index/resource_index/packages
+symbolically linking /home/ceasarmusk/ros2_ws/build/ardupilot_bridge/package.xml -> /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/share/ardupilot_bridge

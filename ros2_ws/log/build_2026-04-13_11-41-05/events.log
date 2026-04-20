@@ -1,0 +1,8 @@
+[0.000000] (-) TimerEvent: {}
+[0.000264] (-) JobUnselected: {'identifier': 'ardupilot_bridge'}
+[0.000318] (-) JobUnselected: {'identifier': 'ldlidar'}
+[0.000346] (-) JobUnselected: {'identifier': 'ldlidar_component'}
+[0.000368] (-) JobUnselected: {'identifier': 'ldlidar_node'}
+[0.000389] (-) JobUnselected: {'identifier': 'reactive_avoidance'}
+[0.000410] (-) JobUnselected: {'identifier': 'rf2o_laser_odometry'}
+[0.001006] (-) EventReactorShutdown: {}

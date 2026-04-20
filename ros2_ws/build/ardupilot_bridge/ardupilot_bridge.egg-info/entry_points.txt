@@ -1,0 +1,4 @@
+[console_scripts]
+cmd_vel_to_guided = ardupilot_bridge.cmd_vel_to_guided:main
+odom_to_mavlink = ardupilot_bridge.odom_to_mavlink:main
+scan_to_obstacle_distance = ardupilot_bridge.scan_to_obstacle_distance:main

@@ -1,0 +1,5 @@
+mavproxy.py \
+  --master=/dev/serial/by-id/usb-Holybro_Pixhawk6C_30004B000451333337383338-if00 \
+  --baudrate 115200 \
+  --out 172.20.10.5:14550 \
+  --out 127.0.0.1:14551

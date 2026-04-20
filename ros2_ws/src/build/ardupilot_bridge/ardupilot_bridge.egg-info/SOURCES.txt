@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+ardupilot_bridge/__init__.py
+ardupilot_bridge/scan_to_obstacle_distance.py
+ardupilot_bridge.egg-info/PKG-INFO
+ardupilot_bridge.egg-info/SOURCES.txt
+ardupilot_bridge.egg-info/dependency_links.txt
+ardupilot_bridge.egg-info/entry_points.txt
+ardupilot_bridge.egg-info/requires.txt
+ardupilot_bridge.egg-info/top_level.txt
+ardupilot_bridge.egg-info/zip-safe
+resource/ardupilot_bridge

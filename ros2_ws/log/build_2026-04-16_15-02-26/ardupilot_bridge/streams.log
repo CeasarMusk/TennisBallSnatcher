@@ -1,0 +1,27 @@
+[2.099s] Invoking command in '/home/ceasarmusk/ros2_ws/src/ardupilot_bridge': PYTHONPATH=/home/ceasarmusk/ros2_ws/build/ardupilot_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ardupilot_bridge build --build-base /home/ceasarmusk/ros2_ws/build/ardupilot_bridge/build install --record /home/ceasarmusk/ros2_ws/build/ardupilot_bridge/install.log --single-version-externally-managed install_data
+[2.543s] running egg_info
+[2.570s] writing ../../build/ardupilot_bridge/ardupilot_bridge.egg-info/PKG-INFO
+[2.571s] writing dependency_links to ../../build/ardupilot_bridge/ardupilot_bridge.egg-info/dependency_links.txt
+[2.572s] writing entry points to ../../build/ardupilot_bridge/ardupilot_bridge.egg-info/entry_points.txt
+[2.573s] writing requirements to ../../build/ardupilot_bridge/ardupilot_bridge.egg-info/requires.txt
+[2.574s] writing top-level names to ../../build/ardupilot_bridge/ardupilot_bridge.egg-info/top_level.txt
+[2.639s] reading manifest file '../../build/ardupilot_bridge/ardupilot_bridge.egg-info/SOURCES.txt'
+[2.641s] writing manifest file '../../build/ardupilot_bridge/ardupilot_bridge.egg-info/SOURCES.txt'
+[2.641s] running build
+[2.641s] running build_py
+[2.643s] copying ardupilot_bridge/odom_to_mavlink.py -> /home/ceasarmusk/ros2_ws/build/ardupilot_bridge/build/lib/ardupilot_bridge
+[2.644s] running install
+[2.654s] running install_lib
+[2.684s] copying /home/ceasarmusk/ros2_ws/build/ardupilot_bridge/build/lib/ardupilot_bridge/odom_to_mavlink.py -> /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/python3.12/site-packages/ardupilot_bridge
+[2.685s] byte-compiling /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/python3.12/site-packages/ardupilot_bridge/odom_to_mavlink.py to odom_to_mavlink.cpython-312.pyc
+[2.689s] running install_data
+[2.689s] copying package.xml -> /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/share/ardupilot_bridge
+[2.689s] running install_egg_info
+[2.726s] removing '/home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/python3.12/site-packages/ardupilot_bridge-0.0.0-py3.12.egg-info' (and everything under it)
+[2.726s] Copying ../../build/ardupilot_bridge/ardupilot_bridge.egg-info to /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/python3.12/site-packages/ardupilot_bridge-0.0.0-py3.12.egg-info
+[2.728s] running install_scripts
+[2.944s] Installing cmd_vel_to_guided script to /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/ardupilot_bridge
+[2.945s] Installing odom_to_mavlink script to /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/ardupilot_bridge
+[2.945s] Installing scan_to_obstacle_distance script to /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/ardupilot_bridge
+[2.946s] writing list of installed files to '/home/ceasarmusk/ros2_ws/build/ardupilot_bridge/install.log'
+[3.066s] Invoked command in '/home/ceasarmusk/ros2_ws/src/ardupilot_bridge' returned '0': PYTHONPATH=/home/ceasarmusk/ros2_ws/build/ardupilot_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ardupilot_bridge build --build-base /home/ceasarmusk/ros2_ws/build/ardupilot_bridge/build install --record /home/ceasarmusk/ros2_ws/build/ardupilot_bridge/install.log --single-version-externally-managed install_data

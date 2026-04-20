@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating nav_goal_bridge.egg-info
+writing nav_goal_bridge.egg-info/PKG-INFO
+writing dependency_links to nav_goal_bridge.egg-info/dependency_links.txt
+writing entry points to nav_goal_bridge.egg-info/entry_points.txt
+writing requirements to nav_goal_bridge.egg-info/requires.txt
+writing top-level names to nav_goal_bridge.egg-info/top_level.txt
+writing manifest file 'nav_goal_bridge.egg-info/SOURCES.txt'
+reading manifest file 'nav_goal_bridge.egg-info/SOURCES.txt'
+writing manifest file 'nav_goal_bridge.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/ceasarmusk/ros2_ws/install/nav_goal_bridge/lib/python3.12/site-packages/nav-goal-bridge.egg-link (link to .)
+Installing move_base_simple_to_nav2 script to /home/ceasarmusk/ros2_ws/install/nav_goal_bridge/lib/nav_goal_bridge
+
+Installed /home/ceasarmusk/ros2_ws/build/nav_goal_bridge
+running symlink_data
+creating /home/ceasarmusk/ros2_ws/install/nav_goal_bridge/share/ament_index
+creating /home/ceasarmusk/ros2_ws/install/nav_goal_bridge/share/ament_index/resource_index
+creating /home/ceasarmusk/ros2_ws/install/nav_goal_bridge/share/ament_index/resource_index/packages
+symbolically linking /home/ceasarmusk/ros2_ws/build/nav_goal_bridge/resource/nav_goal_bridge -> /home/ceasarmusk/ros2_ws/install/nav_goal_bridge/share/ament_index/resource_index/packages
+symbolically linking /home/ceasarmusk/ros2_ws/build/nav_goal_bridge/package.xml -> /home/ceasarmusk/ros2_ws/install/nav_goal_bridge/share/nav_goal_bridge

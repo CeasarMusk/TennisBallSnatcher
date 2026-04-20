@@ -1,0 +1,24 @@
+[1.166s] Invoking command in '/home/ceasarmusk/ros2_ws/build/ardupilot_bridge': PYTHONPATH=/home/ceasarmusk/ros2_ws/build/ardupilot_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(ardu_ros) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ceasarmusk/ros2_ws/build/ardupilot_bridge/build --no-deps symlink_data
+[1.593s] running develop
+[1.847s] running egg_info
+[1.847s] creating ardupilot_bridge.egg-info
+[1.870s] writing ardupilot_bridge.egg-info/PKG-INFO
+[1.871s] writing dependency_links to ardupilot_bridge.egg-info/dependency_links.txt
+[1.871s] writing entry points to ardupilot_bridge.egg-info/entry_points.txt
+[1.871s] writing requirements to ardupilot_bridge.egg-info/requires.txt
+[1.871s] writing top-level names to ardupilot_bridge.egg-info/top_level.txt
+[1.871s] writing manifest file 'ardupilot_bridge.egg-info/SOURCES.txt'
+[1.920s] reading manifest file 'ardupilot_bridge.egg-info/SOURCES.txt'
+[1.920s] writing manifest file 'ardupilot_bridge.egg-info/SOURCES.txt'
+[1.947s] running build_ext
+[1.947s] Creating /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/python3.12/site-packages/ardupilot-bridge.egg-link (link to .)
+[1.947s] Installing scan_to_obstacle_distance script to /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/ardupilot_bridge
+[1.948s] 
+[1.948s] Installed /home/ceasarmusk/ros2_ws/build/ardupilot_bridge
+[1.948s] running symlink_data
+[1.948s] creating /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/share/ament_index
+[1.948s] creating /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/share/ament_index/resource_index
+[1.948s] creating /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/share/ament_index/resource_index/packages
+[1.948s] symbolically linking /home/ceasarmusk/ros2_ws/build/ardupilot_bridge/resource/ardupilot_bridge -> /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/share/ament_index/resource_index/packages
+[1.949s] symbolically linking /home/ceasarmusk/ros2_ws/build/ardupilot_bridge/package.xml -> /home/ceasarmusk/ros2_ws/install/ardupilot_bridge/share/ardupilot_bridge
+[2.048s] Invoked command in '/home/ceasarmusk/ros2_ws/build/ardupilot_bridge' returned '0': PYTHONPATH=/home/ceasarmusk/ros2_ws/build/ardupilot_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ceasarmusk/ros2_ws/install/ardupilot_bridge/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(ardu_ros) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ceasarmusk/ros2_ws/build/ardupilot_bridge/build --no-deps symlink_data

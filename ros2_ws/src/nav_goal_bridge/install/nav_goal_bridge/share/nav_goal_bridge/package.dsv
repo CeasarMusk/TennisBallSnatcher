@@ -1,0 +1,6 @@
+source;share/nav_goal_bridge/hook/pythonpath.dsv
+source;share/nav_goal_bridge/hook/pythonpath.sh
+source;share/nav_goal_bridge/hook/ament_prefix_path.dsv
+source;share/nav_goal_bridge/hook/ament_prefix_path.sh
+source;../../build/nav_goal_bridge/share/nav_goal_bridge/hook/pythonpath_develop.dsv
+source;../../build/nav_goal_bridge/share/nav_goal_bridge/hook/pythonpath_develop.sh

@@ -1,0 +1,2 @@
+[console_scripts]
+reactive_avoidance_node = reactive_avoidance.reactive_avoidance_node:main

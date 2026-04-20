@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+nav_goal_bridge/__init__.py
+nav_goal_bridge/move_base_simple_to_nav2.py
+nav_goal_bridge.egg-info/PKG-INFO
+nav_goal_bridge.egg-info/SOURCES.txt
+nav_goal_bridge.egg-info/dependency_links.txt
+nav_goal_bridge.egg-info/entry_points.txt
+nav_goal_bridge.egg-info/requires.txt
+nav_goal_bridge.egg-info/top_level.txt
+nav_goal_bridge.egg-info/zip-safe
+resource/nav_goal_bridge

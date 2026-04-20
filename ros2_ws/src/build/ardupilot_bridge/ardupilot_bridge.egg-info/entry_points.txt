@@ -1,0 +1,2 @@
+[console_scripts]
+scan_to_obstacle_distance = ardupilot_bridge.scan_to_obstacle_distance:main

@@ -1,0 +1,24 @@
+[1.987s] Invoking command in '/home/ceasarmusk/ros2_ws/src/build/nav_goal_bridge': PYTHONPATH=/home/ceasarmusk/ros2_ws/src/build/nav_goal_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ceasarmusk/ros2_ws/src/install/nav_goal_bridge/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ceasarmusk/ros2_ws/src/build/nav_goal_bridge/build --no-deps symlink_data
+[2.523s] running develop
+[2.840s] running egg_info
+[2.840s] creating nav_goal_bridge.egg-info
+[2.867s] writing nav_goal_bridge.egg-info/PKG-INFO
+[2.867s] writing dependency_links to nav_goal_bridge.egg-info/dependency_links.txt
+[2.867s] writing entry points to nav_goal_bridge.egg-info/entry_points.txt
+[2.867s] writing requirements to nav_goal_bridge.egg-info/requires.txt
+[2.868s] writing top-level names to nav_goal_bridge.egg-info/top_level.txt
+[2.868s] writing manifest file 'nav_goal_bridge.egg-info/SOURCES.txt'
+[2.932s] reading manifest file 'nav_goal_bridge.egg-info/SOURCES.txt'
+[2.932s] writing manifest file 'nav_goal_bridge.egg-info/SOURCES.txt'
+[2.963s] running build_ext
+[2.964s] Creating /home/ceasarmusk/ros2_ws/src/install/nav_goal_bridge/lib/python3.12/site-packages/nav-goal-bridge.egg-link (link to .)
+[2.965s] Installing move_base_simple_to_nav2 script to /home/ceasarmusk/ros2_ws/src/install/nav_goal_bridge/lib/nav_goal_bridge
+[2.965s] 
+[2.966s] Installed /home/ceasarmusk/ros2_ws/src/build/nav_goal_bridge
+[2.966s] running symlink_data
+[2.966s] creating /home/ceasarmusk/ros2_ws/src/install/nav_goal_bridge/share/ament_index
+[2.966s] creating /home/ceasarmusk/ros2_ws/src/install/nav_goal_bridge/share/ament_index/resource_index
+[2.966s] creating /home/ceasarmusk/ros2_ws/src/install/nav_goal_bridge/share/ament_index/resource_index/packages
+[2.966s] symbolically linking /home/ceasarmusk/ros2_ws/src/build/nav_goal_bridge/resource/nav_goal_bridge -> /home/ceasarmusk/ros2_ws/src/install/nav_goal_bridge/share/ament_index/resource_index/packages
+[2.966s] symbolically linking /home/ceasarmusk/ros2_ws/src/build/nav_goal_bridge/package.xml -> /home/ceasarmusk/ros2_ws/src/install/nav_goal_bridge/share/nav_goal_bridge
+[3.079s] Invoked command in '/home/ceasarmusk/ros2_ws/src/build/nav_goal_bridge' returned '0': PYTHONPATH=/home/ceasarmusk/ros2_ws/src/build/nav_goal_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ceasarmusk/ros2_ws/src/install/nav_goal_bridge/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ceasarmusk/ros2_ws/src/build/nav_goal_bridge/build --no-deps symlink_data

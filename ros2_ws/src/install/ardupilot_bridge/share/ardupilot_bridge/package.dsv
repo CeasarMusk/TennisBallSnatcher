@@ -1,0 +1,6 @@
+source;share/ardupilot_bridge/hook/pythonpath.dsv
+source;share/ardupilot_bridge/hook/pythonpath.sh
+source;share/ardupilot_bridge/hook/ament_prefix_path.dsv
+source;share/ardupilot_bridge/hook/ament_prefix_path.sh
+source;../../build/ardupilot_bridge/share/ardupilot_bridge/hook/pythonpath_develop.dsv
+source;../../build/ardupilot_bridge/share/ardupilot_bridge/hook/pythonpath_develop.sh
